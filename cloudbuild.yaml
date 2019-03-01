@@ -1,6 +1,4 @@
 steps:
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['install','-g', 'vuepress']
 - name: 'gcr.io/vuepress-e0b13/vuepress'
   args: [ 'build', 'docs' ]
 - name: 'gcr.io/vuepress-e0b13/firebase'
