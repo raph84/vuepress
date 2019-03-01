@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/vuepress-e0b13/firebase', '.' ]
+images:
+- 'gcr.io/vuepress-e0b13/firebase'
