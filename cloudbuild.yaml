@@ -1,8 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/npm'
-  args: [ 'run docs:build' ]
-- name: 'gcr.io/cloud-builders/npm'
-  args: [ 'test' ]
+  args: [ 'run','docs:build' ]
 - name: 'gcr.io/vuepress-e0b13/firebase'
   args: [ 'deploy', '--token', '${_FIREBASETOKEN}']
 images:
